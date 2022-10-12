@@ -37,11 +37,10 @@ btnSnack2.addEventListener('click', nameGenerator);
 const btnSnack3 = document.getElementById('btn_section_3');
 const calcola = function(){
     const arraySnack3 = [1 , 20 , 40 , 56 , 55 , 36 , 7 , 8 , 9 , 103];
-    const oddArray = [];
-    for(i = 0; i < arraySnack3.length; i++){
-    oddArray.push(arraySnack3[1] + arraySnack3[3] + arraySnack3[5] + arraySnack3[7] + arraySnack3[9]);
-    console.log(oddArray[i]);
-    document.querySelector('.text_snack_3').innerHTML = oddArray[i];
+    let somma = 0;
+    for(x = 1; x < arraySnack3.length; x+=2){
+        somma += arraySnack3[x];
+        document.querySelector('.text_snack_3').innerHTML = somma;
     }
 }
 
