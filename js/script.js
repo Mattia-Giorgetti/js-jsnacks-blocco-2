@@ -39,10 +39,8 @@ const calcola = function(){
     for(i = 0; i < arraySnack3.length; i++){
     oddArray.push(arraySnack3[1] + arraySnack3[3] + arraySnack3[5] + arraySnack3[7] + arraySnack3[9]);
     console.log(oddArray[i]);
-
+    document.querySelector('.text_snack_3').innerHTML = oddArray[i];
     }
- 
-    
 }
 
 btnSnack3.addEventListener('click', calcola);
