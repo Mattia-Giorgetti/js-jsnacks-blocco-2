@@ -34,19 +34,15 @@ btnSnack2.addEventListener('click', nameGenerator);
 
 const btnSnack3 = document.getElementById('btn_section_3');
 const calcola = function(){
-    
-    let evenArray = [];
-    const arraySnack3 = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 , 13 , 14 , 15];
-    for(let i = 0; i < arraySnack3.length; i++){
-        if(i % 2 === 0) {
-            evenArray.push(i);
-            console.log(evenArray);
-    
-            //document.querySelector('.text_snack_3').innerHTML = evenArray;
-            
-        }
-        
+    const arraySnack3 = [1 , 20 , 40 , 56 , 55 , 36 , 7 , 8 , 9 , 103];
+    const oddArray = [];
+    for(i = 0; i < arraySnack3.length; i++){
+    oddArray.push(arraySnack3[1] + arraySnack3[3] + arraySnack3[5] + arraySnack3[7] + arraySnack3[9]);
+    console.log(oddArray[i]);
+
     }
+ 
+    
 }
 
 btnSnack3.addEventListener('click', calcola);
