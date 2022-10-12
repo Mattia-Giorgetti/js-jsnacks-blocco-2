@@ -4,7 +4,9 @@ const btnSnack1 = document.getElementById('btn_snack_1');
 
 const Stampa = function(){
     let inputSnack1 = parseInt(document.getElementById('input_snack_1').value);
-    if(inputSnack1 % 2 == 0){
+    if(isNaN(inputSnack1)){
+        alert('Puoi inserire solo numeri! Riprova');
+    } else if(inputSnack1 % 2 == 0){
         document.querySelector('.text_snack_1').innerHTML = inputSnack1;
     } else {
         document.querySelector('.text_snack_1').innerHTML = inputSnack1+1;
