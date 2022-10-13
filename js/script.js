@@ -45,3 +45,25 @@ const calcola = function(){
 }
 
 btnSnack3.addEventListener('click', calcola);
+
+// SNACK 4
+
+const frutta = ['mela', 'banana', 'pesca', 'arancia', 'kiwi'];
+const topping = ['cioccolato', 'fragola', 'lampone'];
+
+if(frutta.length > topping.length){
+    const elementiDaAggiungere = frutta.length - topping.length;
+    console.log(elementiDaAggiungere);
+    for(let i = 0; i < elementiDaAggiungere; i++){
+        topping.push(i);
+    }
+    console.log(topping);
+} else if(topping.length > frutta.length){
+    const elementiDaAggiungere = frutta.length - topping.length;
+    for(let i = 0; i < elementiDaAggiungere; i++){
+        frutta.push(i);
+    }
+    console.log(frutta);
+} else {
+    console.log('sono uguali');
+}
